@@ -1,13 +1,13 @@
 from fastapi import APIRouter
 
 from app.dependencies import fake
-from app.models.member.member_info import MemberInfo
-from app.models.member.member_request_update import MemberRequestUpdate
+from app.models.account.member_info import MemberInfo
+from app.models.account.member_request_update import MemberRequestUpdate
 from app.models.result import Result
 
 router = APIRouter(
     prefix="/api/v1/account",
-    tags=["account"])
+    tags=["회원"])
 
 
 @router.get("/me", name="회원 정보")
