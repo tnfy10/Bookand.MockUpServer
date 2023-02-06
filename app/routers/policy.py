@@ -6,7 +6,7 @@ from app.models.result import Result
 
 router = APIRouter(
     prefix="/api/v1/policy",
-    tags=["정책"])
+    tags=["정책 API"])
 
 
 @router.post("", name="정책 생성")

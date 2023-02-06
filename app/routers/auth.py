@@ -10,7 +10,7 @@ from app.models.result import Result
 
 router = APIRouter(
     prefix="/api/v1/auth",
-    tags=["로그인"])
+    tags=["로그인 API"])
 
 
 @router.post("/admin", name="어드민 전용")
