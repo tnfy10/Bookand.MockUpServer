@@ -26,7 +26,7 @@ async def post_update_policy(policy_model: PolicyModel) -> PolicyModel:
 
 
 @router.get("/{id}", name="정책 조회")
-async def post_update_policy(id: int) -> PolicyModel:
+async def get_policy(id: int) -> PolicyModel:
     context = ""
     for i in range(10):
         context = context + fake.text() + " "
@@ -34,6 +34,6 @@ async def post_update_policy(id: int) -> PolicyModel:
 
 
 @router.delete("/{id}", name="정책 삭제")
-async def post_update_policy(id: int) -> Result:
+async def delete_policy(id: int) -> Result:
     return Result(result="OK")
 
