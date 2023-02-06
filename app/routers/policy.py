@@ -18,7 +18,7 @@ async def post_create_policy(policy_model: PolicyModel) -> PolicyModel:
 
 
 @router.put("", name="정책 수정")
-async def post_update_policy(policy_model: PolicyModel) -> PolicyModel:
+async def put_update_policy(policy_model: PolicyModel) -> PolicyModel:
     context = ""
     for i in range(10):
         context = context + fake.text() + " "

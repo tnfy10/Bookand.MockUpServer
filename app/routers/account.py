@@ -21,7 +21,7 @@ async def get_nickname_valid(nickname: str) -> bool:
 
 
 @router.post("/profile", name="회원 프로필 변경")
-async def post_change_profile(member_request_update: MemberRequestUpdate) -> MemberInfo:
+async def post_update_profile(member_request_update: MemberRequestUpdate) -> MemberInfo:
     return MemberInfo(email=fake.email(), nickname=member_request_update.nickname, providerEmail=fake.email())
 
 

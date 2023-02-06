@@ -19,7 +19,7 @@ async def post_admin_login(login_request: LoginRequest) -> TokenResponse:
 
 
 @router.post("/admin/manager", name="매니저 생성")
-async def post_admin_create(member_info: MemberInfo) -> Result:
+async def post_create_manager(member_info: MemberInfo) -> Result:
     return Result(result="OK")
 
 
