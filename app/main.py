@@ -1,10 +1,11 @@
 from fastapi import FastAPI
 
-from app.routers import account, auth
+from app.routers import account, auth, policy
 
 app = FastAPI()
 
 app.include_router(auth.router)
+app.include_router(policy.router)
 app.include_router(account.router)
 
 
