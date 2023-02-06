@@ -3,7 +3,7 @@ from fastapi import APIRouter
 from app.dependencies import fake
 from app.models.account.member_info import MemberInfo
 from app.models.account.member_request_update import MemberRequestUpdate
-from app.models.result import Result
+from app.models.common.result import Result
 
 router = APIRouter(
     prefix="/api/v1/account",

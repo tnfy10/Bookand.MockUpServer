@@ -2,7 +2,7 @@ from fastapi import APIRouter
 
 from app.dependencies import fake
 from app.models.policy.policy_model import PolicyModel
-from app.models.result import Result
+from app.models.common.result import Result
 
 router = APIRouter(
     prefix="/api/v1/policy",

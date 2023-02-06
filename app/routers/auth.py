@@ -6,7 +6,7 @@ from app.models.login.auth_request import AuthRequest
 from app.models.login.login_request import LoginRequest
 from app.models.login.token_request import TokenRequest
 from app.models.login.token_response import TokenResponse
-from app.models.result import Result
+from app.models.common.result import Result
 
 router = APIRouter(
     prefix="/api/v1/auth",
