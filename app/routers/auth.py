@@ -8,9 +8,7 @@ from app.models.login.token_request import TokenRequest
 from app.models.login.token_response import TokenResponse
 from app.models.common.result import Result
 
-router = APIRouter(
-    prefix="/api/v1/auth",
-    tags=["로그인 API"])
+router = APIRouter(tags=["로그인 API"])
 
 
 @router.post("/admin", name="어드민 전용")

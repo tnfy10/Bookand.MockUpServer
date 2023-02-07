@@ -4,9 +4,7 @@ from app.dependencies import fake
 from app.models.policy.policy_model import PolicyModel
 from app.models.common.result import Result
 
-router = APIRouter(
-    prefix="/api/v1/policy",
-    tags=["정책 API"])
+router = APIRouter(tags=["정책 API"])
 
 
 @router.post("", name="정책 생성")

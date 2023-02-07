@@ -5,9 +5,7 @@ from app.models.account.member_info import MemberInfo
 from app.models.account.member_request_update import MemberRequestUpdate
 from app.models.common.result import Result
 
-router = APIRouter(
-    prefix="/api/v1/account",
-    tags=["회원 API"])
+router = APIRouter(tags=["회원 API"])
 
 
 @router.get("/me", name="회원 정보")
